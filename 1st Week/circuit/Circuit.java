@@ -1,3 +1,3 @@
 public interface Circuit{
-    protected double getResistance(){}
+    public double getResistance();
 }
