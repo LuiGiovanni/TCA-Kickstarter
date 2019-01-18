@@ -23,8 +23,6 @@ public class Circuitry{
         c[4] = c5;
         c[5] = c6;
 
-        System.out.println(c1.getCurrent());
-
         SerialCircuit sc = new SerialCircuit(c);
     }
 }
