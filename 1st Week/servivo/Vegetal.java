@@ -10,11 +10,7 @@ public class Vegetal extends SerVivo{
         this.name = name;
     }
 
-    public String toString(){
+    protected String photosynthesis(){
         return name + ", " + g + ", " + s;
-    }
-
-    protected void photosynthesis(){
-        
     }
 }

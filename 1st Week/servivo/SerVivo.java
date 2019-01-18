@@ -23,7 +23,7 @@ public class SerVivo{
 
     protected void die(){
         alive = false;
-        System.out.println("The being died at the age of  " + age);
+        System.out.println("The being died at the age of " + age);
         age = 0;
     }
 

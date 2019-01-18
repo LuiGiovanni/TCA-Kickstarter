@@ -13,5 +13,6 @@ public class AnimalClonado extends Animal{
     }
     protected void born(){
         alive = true;
+        System.out.println("A new being was cloned!");
     }
 }
