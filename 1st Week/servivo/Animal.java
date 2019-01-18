@@ -2,12 +2,15 @@ public class Animal extends SerVivo{
     protected String g;
     protected String s;
     protected int i;
+    public String animal;
 
-    public Animal(String g,String s,int i){
+    public Animal(String animal,String g,String s,int i){
         super(g,s);
         this.g = g;
         this.s = s;
         this.i = i;
+        this.animal = animal;
+
     }
 
     public int getInstinct(){
@@ -15,6 +18,6 @@ public class Animal extends SerVivo{
     }
 
     public String toString(){
-        return g + ", " + s + ", " + i;
+        return animal + ", " + g + ", " + s + ", " + i;
     }
 }

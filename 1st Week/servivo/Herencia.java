@@ -2,9 +2,9 @@ public class Herencia{
 
     public static void main(String[] args){
         SerVivo sv = new SerVivo("Canis Lupus","Mammal");
-        Animal lobo = new Animal(sv.getGenus(),sv.getSpecies(),5);
-        AnimalClonado loboClon = new AnimalClonado(lobo.getGenus(),lobo.getSpecies(),3);
-        Vegetal lechuga = new Vegetal("Lactuca", "Lactuca sativa");
+        Animal lobo = new Animal("Lobo", sv.getGenus(),sv.getSpecies(),5);
+        AnimalClonado loboClon = new AnimalClonado("Lobo",lobo.getGenus(),lobo.getSpecies(),3);
+        Vegetal lechuga = new Vegetal("lechuga","Lactuca", "Lactuca sativa");
         
         sv.born();
         System.out.println(sv);
