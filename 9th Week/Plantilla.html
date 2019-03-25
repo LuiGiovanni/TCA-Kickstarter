@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Contact us</h1>
+    </head>
+    <title>Paginilla</title>
+    <style>
+
+            .container{
+                float: left;
+            }
+
+            .box1 { 
+                display: inline-block; 
+                height: 150px;
+                width: 50%; 
+                font-size:1rem; /* IE9+ */
+                float: left;
+                margin-left:0px;
+            }
+
+            .box2 { 
+                display: inline-block; 
+                height: 150px;
+                width: 50%; 
+                font-size:1rem; /* IE9+ */
+                float: left;
+                margin-left:0px;
+            }
+
+            .box3{
+                width: 100%;
+                padding:0px;
+                margin:0px;
+            }
+
+            .texto{
+                width:90%;
+            }
+
+            .texto2{
+                width: 95%;
+                text-align: left;
+            }
+
+            .boton{
+                width: 50px;
+                text-align: center;
+                float: right;
+                margin-right: 34px;
+            }
+        
+    </style>
+
+    <div class="container" style="width: 800px;">
+        <div class="box1">
+            <label for="First Name"><br>First Name</br></label>
+            <input class="texto" type="text" placeholder="Enter Name" name="FName" required>
+            <br>
+            <label for="Email"><br>Email</br></label>
+            <input class="texto" type="text" placeholder="Enter email" name="Email" required>
+        </div>
+        
+        <div class="box2">
+            <label for="Last Name"><br>Last Name</br></label>
+            <input class="texto" type="text" placeholder="Enter Name" name="LName" required>
+            <br>
+            <label for="Phone"><br>Phone</br></label>
+            <input class="texto" type="text" placeholder="Enter Phone" name="Phone" required>
+            <br><br><br>
+        </div>
+        <div class="box3">
+            <label for="Subject"><br>Subject</br></label>
+            <input class="texto2" type="text" placeholder="Subject" name="Subject" required>
+            <br>
+    
+            <label for="Message"><br>Your message</br></label>
+            <textarea class="texto2" name="comment">
+                    Enter text here...</textarea>
+
+        </div>
+
+        <div class="box4">
+            <br>
+            <button class="boton" type="button">Enter</button>
+        </div>
+        
+    </div>
+
+
+</html>
