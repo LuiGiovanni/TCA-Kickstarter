@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <h1>Contact us</h1>
+        <h1>Contact Us</h1>
     </head>
     <title>Paginilla</title>
     <style>
@@ -10,9 +10,9 @@
                 float: left;
             }
 
-            .box1 { 
+            .box1 {
                 display: inline-block; 
-                height: 150px;
+                height: 180px;
                 width: 50%; 
                 font-size:1rem; /* IE9+ */
                 float: left;
@@ -21,7 +21,7 @@
 
             .box2 { 
                 display: inline-block; 
-                height: 150px;
+                height: 180px;
                 width: 50%; 
                 font-size:1rem; /* IE9+ */
                 float: left;
@@ -30,29 +30,84 @@
 
             .box3{
                 width: 100%;
+                height:0%;
                 padding:0px;
                 margin:0px;
             }
 
-            .texto{
-                width:90%;
+            input[type="text"] {
+                width: 90%;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: 8px 0;
+                outline: none;
+                padding: 7px;
+                box-sizing: border-box;
+                transition: 0.3s;
+            }
+
+            input[type="text"]:focus {
+                border-color: dodgerBlue;
+                box-shadow: 0 0 8px 0 dodgerBlue;
+            }
+
+            .inputWithIcon input[type="text"] {
+                padding-left: 40px;
+            }
+
+            .inputWithIcon {
+                position: relative;
+            }
+
+            .inputWithIcon i {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                padding: 9px 8px;
+                color: #aaa;
+                transition: 0.3s;
+            }
+
+            .inputWithIcon input[type="text"]:focus + i {
+                color: dodgerBlue;
+            }
+
+            .inputWithIcon.inputIconBg i {
+                background-color: #aaa;
+                color: #fff;
+                padding: 9px 4px;
+                border-radius: 4px 0 0 4px;
+            }
+
+            .inputWithIcon.inputIconBg input[type="text"]:focus + i {
+                color: #fff;
+                background-color: dodgerBlue;
             }
 
             .texto2{
                 width: 95%;
-                text-align: left;
+                border: 2px solid #aaa;
+                border-radius: 4px;
+                margin: 8px 0;
+                outline: none;
+                padding: 7px;
+                box-sizing: border-box;
+                transition: 0.3s;
             }
 
             .boton{
                 width: 50px;
                 text-align: center;
                 float: right;
-                margin-right: 34px;
+                margin-right: 40px;
+                
             }
         
     </style>
 
     <div class="container" style="width: 800px;">
+        
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
         <div class="box1">
             <label for="First Name"><br>First Name</br></label>
             <input class="texto" type="text" placeholder="Enter Name" name="FName" required>
@@ -67,11 +122,11 @@
             <br>
             <label for="Phone"><br>Phone</br></label>
             <input class="texto" type="text" placeholder="Enter Phone" name="Phone" required>
-            <br><br><br>
+            <br><br><br><br>
         </div>
         <div class="box3">
             <label for="Subject"><br>Subject</br></label>
-            <input class="texto2" type="text" placeholder="Subject" name="Subject" required>
+            <input class="texto2" type="texto2" placeholder="Subject" name="Subject" required>
             <br>
     
             <label for="Message"><br>Your message</br></label>
